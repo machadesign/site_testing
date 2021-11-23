@@ -1,0 +1,157 @@
+body {
+   background-color: yellow;
+}
+
+.top-bar {
+    background-image: url('/static/Top_BG_bar.png');
+}
+.new_logo {
+    background: yellow;
+}
+
+.frnt_product {
+    background-color: yellow;
+}
+
+.coming_soon_message {
+    background-color: blue;
+}
+
+.sign_up_message {
+    background-color: blue;
+}
+.game_overview_section {
+    background-color: yellow;
+}
+#front_image {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    margin-bottom: 40px;
+   /* margin-left: 90px;  */
+}
+.sign_up_form {
+    background-color: blue;
+}
+
+#word_rubble_logo {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+#new_game {
+    padding: 20px;
+}
+
+#Form {
+  height: 100%;
+  margin: 0px;
+  background-color: blue;
+  text-align: center;
+}
+#Form_description {
+  height: 100%;
+  margin: 0px;
+  background-color: blue;
+  text-align: center;
+}
+
+#get_notified {
+  font-size: 22pt;
+  color: white;
+}
+
+#sign_up_message {
+ color: white;
+ font-weight: bolder;
+ font-size: 28pt;
+ padding: 2px;
+}
+
+#image_back {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    margin-top: 60px;
+}
+
+#game_description {
+ margin-top: 20px;
+ font-size: 29px;
+ /* font-weight: bolder;  */
+ font-family: var(--bs-font-sans-serif);
+
+}
+
+#email_label {
+ color: white;
+ font-size: 20px;
+ top-padding: 5px;
+ padding: 2px;
+}
+
+#name_label {
+ color: white;
+  font-size: 20px;
+  padding: 2px;
+}
+
+#submitbtn {
+ padding-top: 8px;
+ padding-bottom: 8px;
+}
+
+#gm_overview {
+ margin-top: 150px;
+ font-size: 34px;
+ font-weight: bolder;
+ font-family: var(--bs-font-sans-serif);
+
+}
+
+#front_image {
+/*
+height: 234.9;
+max-width: 100%;
+*/
+margin-left: 80px;
+}
+
+
+@media screen and (min-width: 375px) {
+
+#front_image {
+    width: 330px;
+    height: auto;
+    margin-left: 80px;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+
+#front_image {
+    width: 350px;
+    height: auto;
+    margin-left: 30px;
+    }
+}
+
+#signup_message {
+
+    text-align: center;
+    font-size: 18pt;
+    color: white;
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+  div.example {
+    font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: yellow;
+  }
+}
+
