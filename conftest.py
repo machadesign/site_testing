@@ -22,14 +22,14 @@ chrome_exe = '/Users/matthewchadwell/Desktop/webdrivers/chromedriver'
 service = ChromeService(executable_path=chrome_exe)
 
 
-@pytest.fixture(scope="class")
+@pytest.fixture(scope="session")
 # class multiple test cases will get called and drive ronly called once
 # function , driver is called for each test case in a class
 def return_driver(request):
     # create aof the chrome webdriver
     driver = webdriver.Chrome(service=service)
     # web_driver in request variable at a (scope=" ") level which can be accessed while running your test
-    request.cls.driver = driver
+    # request.cls.driver = driver
     # cleanup options -
     # option to just clear all cookies
     # web_driver.delete_all_cookies()
@@ -38,3 +38,5 @@ def return_driver(request):
     yield driver
 
     driver.close()
+
+# specify window size 
