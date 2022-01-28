@@ -1,0 +1,55 @@
+---
+# start of a new yaml file
+
+# note: strings do not need quotes , friednly for people fill it out
+# ran headless will use browsers set screen size
+
+BROWSER_EXE_PATHS:
+  CHROME: '/Users/matthewchadwell/Desktop/webdrivers/chromedriver'
+  FIREFOX: '/Users/matthewchadwell/Desktop/webdrivers/geckodriver'
+  SAFARI: '/usr/bin/safaridriver'
+
+
+# by default testing on browser is on
+# specify true if testing emulator on mobule devices
+
+BROWSER_PARAMS: [chrome,firefox,safari,mobile_Nexus 5]
+#BROWSER_PARAMS: ['chrome','mobile_Nexus 5','firefox','safari']
+#BROWSER_PARAMS: ['chrome','firefox','Mobile_Nexus 5','Mobile_Galaxy Fold']
+
+CHROME:
+  BROWSER_VERSION: 94.032
+# specify the browser versions want to test on
+  HEADLESS: False
+#  CHROME_HEADLESS: False
+  # Specify FULLSCREEN or leave NA or blank and fill in custom width and height
+  SCREEN_SIZE: FULLSCREEN
+  SCREEN_WIDTH: 350
+  SCREEN_HEIGHT: 350
+
+FIREFOX:
+  BROWSER_VERSION: 95.032
+  HEADLESS: False
+  SCREEN_SIZE: FULLSCREEN
+  SCREEN_WIDTH: 350
+  SCREEN_HEIGHT: 350
+
+SAFARI:
+  BROWSER_VERSION: 13.1.2
+#  HEADLESS: Unavailable for safari
+  SCREEN_SIZE: CUSTOM
+  SCREEN_WIDTH: 350
+  SCREEN_HEIGHT: 350
+
+
+
+#CHROME_HEADLESS: False
+## Specify FULLSCREEN or leave NA or blank and fill in custom width and height
+#CHROME_SCREEN_SIZE: 'FULLSCREEN'
+#CHROME_SCREEN_WIDTH: 350
+#CHROME_SCREEN_HEIGHT: 350
+
+
+#firefox_PAGE_LOADING: 'eager'
+#"FIREFOX_HEADLESS"
+
